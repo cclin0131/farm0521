@@ -1,0 +1,154 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="{% static "css/style.css" %}" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <title>百香果簡介</title>
+    <style type="text/css">
+      .jumbotron{
+        margin-bottom: 0;
+      }
+      .path{
+        background-color: transparent;
+
+      }
+      .path .breadcrumb{
+        background-color: transparent;
+        font-size: 28px;
+      }
+      .main-footer{
+        background-color: #000;
+        color: #fff;
+      }
+      .navbar-nav{
+        font-size: 22px;
+        margin: 0px 15px;
+        text-align: center;
+      }
+      .container .content h1{
+        margin-bottom: 1.5em;
+        text-shadow:3px 3px 3px #B8B8FF;
+        font-family:微軟正黑體;
+        font-size: 40px;
+        text-align: center;
+      }
+      .container .content p{
+        line-height: 2.0;
+        margin: 20px 40px;
+        font-size: 20px;
+        text-align: justify;
+      }
+    </style>
+  </head>
+  <body>
+
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color:#FFD1A4;">
+  <a class="navbar-brand" href="{% url 'index' %}">
+    <img src="{% static "images/logo.png" %}" width="80px" height="65px" class="d-inline-block align-center" alt="">
+    百香果農場
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'intro' %}">百香果簡介<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'indus' %}">百香果產業</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'grow' %}">百香果生長</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'train' %}">百香果整蔓</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'market' %}">百香果市場</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'shop' %}">購物專區</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'member' %}">會員專區</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+
+
+
+
+<div class="banner">
+  <img src="{% static "images/Food.jpg" %}" class="img-fluid" alt="" style="width: 100%;">
+</div>
+
+<div class="path">
+  <div class="container">
+   <nav aria-label="breadcrumb">
+     <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{% url 'index' %}">首頁</a></li>
+        <li class="breadcrumb-item active" aria-current="page">百香果簡介</li>
+     </ol>
+    </nav>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-3">
+      <div class="list-group">
+        <a href="{% url 'intro' %}" class="list-group-item list-group-item-action active" aria-current="true">百香果簡介</a>
+        <a href="{% url 'indus' %}" class="list-group-item list-group-item-action">百香果產業</a>
+        <a href="{% url 'grow' %}" class="list-group-item list-group-item-action">百香果生長</a>
+        <a href="{% url 'train' %}" class="list-group-item list-group-item-action">百香果整蔓</a>
+        <a href="{% url 'market' %}"  class="list-group-item list-group-item-action">百香果市場</a>
+        <a href="{% url 'shop' %}"  class="list-group-item list-group-item-action">購物專區</a>
+      </div>
+    </div>
+   <div class="col-12 col-md-9 content">
+      <h1>百香果名字的由來？</h1>
+      <p>百香果因為花朵盛開時很像時鐘表面的刻劃，台灣稱它為「時計果」或「受難果」，其英文名是「Passionfruit」，熱情的水果。百香果為西番蓮科西番蓮屬，原產地於南美洲巴西，分布在熱帶及亞熱帶地區。最早在1901由日本人引入紫色種，因為花朵長得很像時鐘的字盤，當時日本人稱它「時計果」。直到1967年，台灣由中南美洲引入百香果並育成新品種，就是現在主要栽種品種的「台農1號」百香果，目前已成為台灣低海拔山區野果。</p>
+      <br><br><br>
+      <h1>主要栽培品種</h1>
+      <p>百香果因為花朵盛開時很像時鐘表面的刻劃，台灣稱它為「時計果」或「受難果」，其英文名是「Passionfruit」，熱情的水果。百香果為西番蓮科西番蓮屬，原產地於南美洲巴西，分布在熱帶及亞熱帶地區。最早在1901由日本人引入紫色種，因為花朵長得很像時鐘的字盤，當時日本人稱它「時計果」。直到1967年，台灣由中南美洲引入百香果並育成新品種，就是現在主要栽種品種的「台農1號」百香果，目前已成為台灣低海拔山區野果。</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid main-footer text-center">
+  &copy; Copyright 2022 百香果農場
+</div>
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

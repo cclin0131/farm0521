@@ -1,0 +1,169 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="{% static "css/style.css" %}" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <title>百香果整蔓</title>
+    <style type="text/css">
+      .jumbotron{
+        margin-bottom: 0;
+      }
+      .path{
+        background-color: transparent;
+
+      }
+      .path .breadcrumb{
+        background-color: transparent;
+        font-size: 28px;
+      }
+      .main-footer{
+        background-color: #000;
+        color: #fff;
+      }
+      .navbar-nav{
+        font-size: 22px;
+        margin: 0px 15px;
+        text-align: center;
+      }
+      .container .content h1{
+        margin-bottom: 1.5em;
+        text-shadow:3px 3px 3px #B8B8FF;
+        font-family:微軟正黑體;
+        font-size: 40px;
+        text-align: center;
+      }
+      .container .content p{
+        line-height: 2.0;
+        margin: 20px 40px;
+        font-size: 20px;
+        text-align: justify;
+      }
+    </style>
+  </head>
+  <body>
+
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color:#FFD1A4;">
+  <a class="navbar-brand" href="{% url 'index' %}">
+    <img src="{% static "images/logo.png" %}" width="80px" height="65px" class="d-inline-block align-center" alt="">
+    百香果農場
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'intro' %}">百香果簡介<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'indus' %}">百香果產業</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'grow' %}">百香果生長</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'train' %}">百香果整蔓</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'market' %}">百香果市場</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'shop' %}">購物專區</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'member' %}">會員專區</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<div class="banner">
+  <img src="{% static "images/traintop.gif" %}" class="img-fluid" alt="" style="width: 100%;">
+</div>
+
+<div class="path">
+  <div class="container">
+   <nav aria-label="breadcrumb">
+     <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{% url 'index' %}">首頁</a></li>
+        <li class="breadcrumb-item active" aria-current="page">百香果整蔓</li>
+     </ol>
+    </nav>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-3">
+      <div class="list-group">
+        <a href="{% url 'intro' %}" class="list-group-item list-group-item-action ">百香果簡介</a>
+        <a href="{% url 'indus' %}" class="list-group-item list-group-item-action">百香果產業</a>
+        <a href="{% url 'grow' %}" class="list-group-item list-group-item-action ">百香果生長</a>
+        <a href="{% url 'train' %}" class="list-group-item list-group-item-action active" aria-current="true">百香果整蔓</a>
+        <a href="{% url 'market' %}"  class="list-group-item list-group-item-action">百香果市場</a>
+        <a href="{% url 'shop' %}"  class="list-group-item list-group-item-action">購物專區</a>
+      </div>
+    </div>
+
+
+
+<div class="col-12 col-md-9 content">
+      <h1>整枝修剪</h1>
+      <img src="{% static "images/train01.jpg" %}" class="img-fluid" alt="" style="width: 100%;">
+      <p>整蔓除去死、老、受傷及病害部份枝條，避免枝蔓重疊及無生產力枝條耗費養分，可促進新蔓生長、增加透光及通風， 並減少病蟲害發生、提高病蟲害防治效率。百香果不建議過高強度的修剪，若枝條過密、病蟲害問題嚴重時，可行強度整枝修剪，使其重新萌發側芽。</p>
+      <br><br><br>
+      <h1>網室栽培</h1>
+        <img src="{% static "images/c01.jpg" %}" class="img-fluid rounded mx-auto d-block" alt="" style="width: 85%;">
+      <p>巧妙運用高屏地區冬季溫暖少雨的特色氣候，成功克服了雨季果實好發的疫病，並透過網室栽培有效阻絕東方果實蠅，搭配友善資材的使用，大幅降低化學農藥用量。</p>
+      <br><br><br>
+      <h1>授粉方式</h1>
+        <img src="{% static "images/trainbee.jpg" %}" class="img-fluid rounded mx-auto d-block" alt="" style="width: 85%;">
+      <p>在網室中可利用蜜蜂授粉，降低人力成本支出；農友以蜜蜂授粉後再以人工授粉補強，單位產量還可再提高。</p>
+      <br><br><br>
+      <h1>採收方式</h1>
+        <img src="{% static "images/train03.jpg" %}" class="img-fluid rounded mx-auto d-block" alt="" style="width: 85%;">
+      <p>百香果開花後約80天，果實會完全成熟，利用吊網收穫自然成熟掉落之果實。</p>
+    </div>
+  </div>
+</div>
+<br><br>
+
+<div class="container-fluid main-footer text-center">
+  &copy; Copyright 2022 百香果農場
+</div>
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
+
+
+
+
+
+
+
